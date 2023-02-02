@@ -7,14 +7,14 @@ import reportWebVitals from './reportWebVitals';
 import Header from './components/Header'
 import Footer from './components/Footer'
 import Error from './components/Error'
-
+import Thumb from './components/Thumb'
 import About from './pages/About'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
-        <About />
+        <Thumb />
     </Router>
   </React.StrictMode>
 );
