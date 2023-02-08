@@ -1,11 +1,16 @@
 import '../../styles/thumb.css'
+import Data from "../data/data.json"
 
 function Thumb() {
-    return(<div className="square">
+    return(
+    Data.map( data =>{
+        return(<div className="square" key={data.id}>
+        <img src={data.cover} className="background"/>
         <div className="thumbText">
-            Titre de la location
+            {data.title}
         </div>
     </div>)
-}
+    })
+)}
 
 export default Thumb;

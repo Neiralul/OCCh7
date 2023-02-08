@@ -4,13 +4,26 @@
     align-items: center;
 }
 .Banner {
-    width: 80%;
+    max-width: 80%;
+    height: 223px;
+    overflow: hidden;
+    border-radius: 25px;
+    object-position: center;
 }
 
-img {
+.aboutImg {
     object-fit: contain;
 }
 
 .Collapses {
     width: 70%;
+}
+
+@media (max-width: 480px) {
+    .Banner {
+        width: 80%;
+    }
+    .Collapses {
+        width: 80%;
+    }
 }

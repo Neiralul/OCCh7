@@ -5,7 +5,7 @@ import '../../styles/about.css'
 function About () {
     return (<div className="aboutPage">
         <div className="Banner">
-        <img src={aboutBanner} alt="vallée avec montagnes enneigées" />
+        <img src={aboutBanner} alt="vallée avec montagnes enneigées" className="aboutImg"/>
         </div>
         <div className="Collapses">
             <Collapsible label="Fiabilité">

@@ -38,3 +38,20 @@ min-width: fit-content;
     margin-left: 5%;
     max-height: 55px;
 }
+
+@media (max-width:480px) {
+    .kasanav-home {
+        font-size: 12px;
+        text-transform: uppercase;
+        margin-right: 10px;
+    }
+    .kasanav-about {
+        font-size: 12px;
+        text-transform: uppercase;
+        margin-left: 10px;
+    }
+    .topLogo {
+        max-height: 47px;
+        width: 145px;
+    }
+}

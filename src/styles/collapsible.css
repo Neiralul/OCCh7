@@ -11,23 +11,53 @@
     font-size: 24px;
     line-height: 142.6%;
     display: flex;
+    align-items: center;
 }
 
 .collapseText {
     color: #FF6060;
-    background-color: #f7f7f7;
-    width: 100%;
-    border-radius: 5px;
-    padding-top: 20px;
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 142.6%;
+    padding: 20px;   
+}
+.textBackground {
+    background-color: #f7f7f7;
+    width: 100%;
+    border-radius: 5px;
 }
 
 .collapseBackground {
     background-color: #f7f7f7;
     border-radius: 5px;
     margin: 40px 0px;
+}
+
+.collapseImg {
+    width: 29px;
+    height: 29px;
+}
+
+
+.collapseLabel {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 20px;
+}
+
+@media (max-width: 480px) {
+    .collapseText {
+        font-size: 12px;
+        padding: 10px;
+    }
+    .collapseButton {
+        font-size: 13px;
+    }
+    .collapseLabel {
+        margin: 0px 10px;
+    }
 }

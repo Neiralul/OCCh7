@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import '../../styles/collapsible.css'
+import Arrow from '../../images/arrow.svg'
 
 const Collapsible =(props)=>{
     const [open, setOpen] = useState(false);
@@ -8,10 +9,17 @@ const Collapsible =(props)=>{
     }
     return(
         <div className="collapseBackground">
-            <button onClick={toggle} className="collapseButton">{props.label}</button>
+            <button onClick={toggle} className="collapseButton">
+                <div className="collapseLabel">
+                    {props.label} 
+                    <img src={Arrow} alt="flèche" className="collapseImg"/>
+                </div>
+            </button>
             {open && (
-                <div className="collapseText">
-                    {props.children}
+                <div className="textBackground">
+                    <div className="collapseText">
+                        {props.children}
+                    </div>
                 </div>
             )}
         </div>

@@ -27,3 +27,12 @@
     color: white;
 }
 
+@media (max-width: 480px) {
+    .kasabot-text {
+        font-size: 12px;
+    }
+    .botLogo {
+        height: 39.44px;
+        width: 122px;
+    }
+}

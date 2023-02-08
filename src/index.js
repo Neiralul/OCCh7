@@ -9,12 +9,15 @@ import Footer from './components/Footer'
 import Error from './components/Error'
 import Thumb from './components/Thumb'
 import About from './pages/About'
+import Home from './pages/Home'
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
-        <Thumb />
+        <Header />
+        <About />
+        <Footer />
     </Router>
   </React.StrictMode>
 );
