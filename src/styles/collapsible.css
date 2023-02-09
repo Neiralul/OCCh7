@@ -40,6 +40,9 @@
     height: 29px;
 }
 
+.collapseImg:active {
+    transform:rotate(180deg);
+}
 
 .collapseLabel {
     width: 100%;
@@ -51,11 +54,11 @@
 
 @media (max-width: 480px) {
     .collapseText {
-        font-size: 12px;
+        font-size: 16px;
         padding: 10px;
     }
     .collapseButton {
-        font-size: 13px;
+        font-size: 18px;
     }
     .collapseLabel {
         margin: 0px 10px;

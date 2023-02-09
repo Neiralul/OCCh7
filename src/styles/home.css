@@ -1,0 +1,39 @@
+.homePage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.homeBanner {
+    width: 90%;
+    height: 223px;
+    border-radius: 25px;
+    background-image: url("../images/homeBanner.jpg");
+    background-position: 50% 45%;
+    background-size: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bannerText {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 142.6%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.thumbDisplay {
+    display: flex;
+    flex-flow: row wrap;
+    width: 90%;
+    justify-content: space-evenly;
+    background: #f7f7f7;
+    padding: 40px 0px;
+    border-radius: 25px;
+    margin-top: 50px;
+}

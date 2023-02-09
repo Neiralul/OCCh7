@@ -1,14 +1,18 @@
 import React from "react"
-
-import data from "../../components/data/data.json"
+import Thumb from "../../components/Thumb"
+import "../../styles/home.css"
 
 function Home(){
-const newdata= data.map( (data) =>{
     return (
-        <li>
-            {data.title}
-        </li>
+        <div className="homePage">
+            <div className="homeBanner">
+                <span className="bannerText">Chez vous, partout et ailleurs</span>
+            </div>
+            <div className="thumbDisplay">
+                <Thumb />
+            </div>
+        </div>
     )
-})
 }
+
 export default Home
