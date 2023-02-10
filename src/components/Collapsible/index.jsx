@@ -12,7 +12,7 @@ const Collapsible =(props)=>{
             <button onClick={toggle} className="collapseButton">
                 <div className="collapseLabel">
                     {props.label} 
-                    <img src={Arrow} alt="flèche" className="collapseImg"/>
+                    <img src={Arrow} alt="flèche" className={!open ? 'arrow arrow-up' : 'arrow arrow-down'}/>
                 </div>
             </button>
             {open && (
