@@ -1,5 +1,5 @@
 import React from "react"
-import Thumb from "../../components/Thumb"
+import Thumb from "../../components/Thumb/Thumb"
 import "../../styles/home.css"
 
 function Home(){

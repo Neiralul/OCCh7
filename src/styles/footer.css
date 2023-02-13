@@ -1,6 +1,6 @@
 .kasabot {
     position: relative;
-    bottom: 0;
+    bottom: 0px;
     width: 100%;
     background: #000000;
     display: flex;

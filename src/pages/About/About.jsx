@@ -1,4 +1,4 @@
-import Collapsible from '../../components/Collapsible'
+import Collapsible from '../../components/Collapsible/Collapsible'
 import aboutBanner from '../../images/aboutBanner.jpg'
 import '../../styles/about.css'
 

@@ -1,0 +1,67 @@
+.LocationPage {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.LocationMiddle {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    width: 90%;
+}
+
+.LocationOwner {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.LocationRating {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.Part {
+    width: 45%;
+    border: 1px green solid;
+    margin: 20px 0px 0px;
+}
+
+.LocationBot {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.LocationCollapses {
+    width: 42.5%;
+}
+
+@media (max-width: 480px) {
+    .LocationMiddle {
+        flex-direction: row;
+    }
+    .Part {
+        width: 100%;
+    }
+    .LocationDescription {
+        order: 0;
+    }
+    .LocationRating {
+        order: 1;
+        width: 40%;
+        justify-content: flex-start;
+    }
+    .LocationOwner {
+        order: 2;
+        width: 40%;
+    }
+    .LocationBot {
+        flex-direction: column;
+        align-items: center;
+    }
+    .LocationCollapses {
+        width: 90%;
+    }
+}
