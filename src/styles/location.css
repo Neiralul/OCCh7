@@ -2,6 +2,11 @@
     display: flex;
     align-items: center;
     flex-direction: column;
+    justify-content: center;
+}
+.cheval {
+    width: 100%;
+    height: 100%;
 }
 .LocationMiddle {
     display: flex;
@@ -10,10 +15,66 @@
     width: 90%;
 }
 
+.LocationInfo {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    color: #FF6060;
+    display: flex;
+    flex-direction: column;
+    
+}
+.LocationTitle {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+h3 {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    color: #FF6060;
+}
+
 .LocationOwner {
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    color: #FF6060;
+}
+.OwnerName {
+    width: 80px;
+    text-align: right;
+}
+.OwnerPicture {
+    border-radius: 50%;
+    height: 64px;
+    margin: 0px 30px 0px 10px;
+}
+.LocationTags {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.Tags {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 142.6%;
+    color: white;
+    background-color: #FF6060;
+    padding: 5px 10px;
+    border-radius: 15px;
+    margin-top: 5px;
+    margin-right: 10px;
 }
 
 .LocationRating {
@@ -24,7 +85,6 @@
 
 .Part {
     width: 45%;
-    border: 1px green solid;
     margin: 20px 0px 0px;
 }
 
@@ -32,6 +92,9 @@
     display: flex;
     width: 100%;
     justify-content: space-evenly;
+}
+.Equipments {
+    display: flex;
 }
 
 .LocationCollapses {
@@ -45,7 +108,7 @@
     .Part {
         width: 100%;
     }
-    .LocationDescription {
+    .LocationTags {
         order: 0;
     }
     .LocationRating {

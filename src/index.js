@@ -1,13 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter as Router, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './index.css';
-import App from './components/App';
 import reportWebVitals from './reportWebVitals';
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer'
 import Error from './components/Error/Error'
-import Thumb from './components/Thumb/Thumb'
 import About from './pages/About/About'
 import Home from './pages/Home/Home'
 import Location from './pages/Location/Location'
@@ -16,9 +14,14 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <Router>
-        <Header />
-        <Location />
-        <Footer />
+      <Header />
+      <Routes>
+        <Route exact path="/" element={<Home />} />
+        <Route path="/locations/:id" element={<Location />} />
+        <Route path="/about" element={<About />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+      <Footer />
     </Router>
   </React.StrictMode>
 );
