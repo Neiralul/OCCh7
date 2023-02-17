@@ -24,9 +24,13 @@ export default function Carousel({Slides}) {
     return (
         <div className="carousel">
             <div className="carousel-picture" style={bgImageStyle}>
-                <img className="arrowPrevious" src={CarouselArrow} alt="Previous Picture" onClick={Previous} />
-                <span className="pictureNumber"> {currentState+1}/{Slides.length}</span>
-                <img className="arrowNext" src={CarouselArrow} alt="Next Picture" onClick={Next} />
+                {Slides.length >1 &&
+                    <div className="pictureChange">
+                        <img className="arrowPrevious" src={CarouselArrow} alt="Previous Picture" onClick={Previous} />
+                        <span className="pictureNumber"> {currentState+1}/{Slides.length}</span>
+                        <img className="arrowNext" src={CarouselArrow} alt="Next Picture" onClick={Next} />
+                    </div>
+                }
             </div>
         </div>
     )

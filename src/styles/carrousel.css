@@ -4,10 +4,11 @@
     width: 90%;
     border-radius: 25px;
 }
-.carousel-picture {
+.pictureChange {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    height: 100%;
 }
 .arrowPrevious {
     transform: rotate(180deg);
