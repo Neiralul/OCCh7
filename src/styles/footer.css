@@ -1,11 +1,12 @@
 .kasabot {
-    position: relative;
+    position: absolute;
     bottom: 0px;
     width: 100%;
     background: #000000;
     display: flex;
     justify-content: center;
     flex-flow: column nowrap;
+    margin-top: 166px;
 }
 
 .kasabot-text {

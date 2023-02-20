@@ -3,6 +3,7 @@
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    padding-bottom: 200px;
 }
 
 .LocationMiddle {
@@ -129,8 +130,8 @@ h3 {
         justify-content: flex-start;
     }
     .LocationOwner {
-        order: 2;
-        width: 40%;
+        order: 2;   
+        width: 40%;   
     }
     .LocationBot {
         flex-direction: column;
@@ -142,5 +143,9 @@ h3 {
     .rating {
         width: 20px;
         height: 20px;
+        margin: 0px 5px 0px 0px;
+    }
+    .OwnerPicture {
+        height: 48px;
     }
 }

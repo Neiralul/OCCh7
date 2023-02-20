@@ -6,7 +6,7 @@ function Home(){
     return (
         <div className="homePage">
             <div className="homeBanner">
-                <span className="bannerText">Chez vous, partout et ailleurs</span>
+            <div className="bannerText"><span className="abc">Chez vous, partout et ailleurs</span></div>
             </div>
             <div className="thumbDisplay">
                 <Thumb />

@@ -41,17 +41,17 @@ min-width: fit-content;
 
 @media (max-width:480px) {
     .kasanav-home {
-        font-size: 12px;
+        font-size: 14px;
         text-transform: uppercase;
         margin-right: 10px;
     }
     .kasanav-about {
-        font-size: 12px;
+        font-size: 14px;
         text-transform: uppercase;
         margin-left: 10px;
     }
     .topLogo {
-        max-height: 47px;
-        width: 145px;
+        margin-top: 30px;
+        max-height: 35%;
     }
 }
