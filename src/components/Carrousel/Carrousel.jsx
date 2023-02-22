@@ -5,12 +5,14 @@ import '../../styles/carrousel.css'
 
 export default function Carousel({Slides}) {
     const [currentState, setCurrentState]= useState(0);
+    
     const bgImageStyle = {
         backgroundImage: `url(${Slides[currentState]})`,
         backgroundPosition: 'center',
         backgroundSize: 'cover',
         height: '100%'
     }
+
     const Next = () => { setCurrentState(currentState +1);
     if (currentState === Slides.length -1)
         setCurrentState(0);

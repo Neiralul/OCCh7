@@ -2,7 +2,8 @@ import Collapsible from '../../components/Collapsible/Collapsible'
 import '../../styles/about.css'
 
 function About () {
-    return (<div className="aboutPage">
+    return (
+    <div className="aboutPage">
         <div className="aboutBanner"></div>
         <div className="Collapses">
             <Collapsible label="Fiabilité">
@@ -24,7 +25,8 @@ function About () {
                 Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.
             </Collapsible>
         </div>
-    </div>)
+    </div>
+    )
 }
 
 export default About

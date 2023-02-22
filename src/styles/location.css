@@ -49,7 +49,7 @@ h3 {
 }
 
 .OwnerName {
-    width: 80px;
+    width: 90px;
     text-align: right;
 }
 
@@ -111,6 +111,7 @@ h3 {
 @media (max-width: 480px) {
     .LocationMiddle {
         flex-direction: row;
+        align-self: center;
     }
     .Part {
         width: 100%;
@@ -147,5 +148,6 @@ h3 {
     }
     .OwnerPicture {
         height: 48px;
+        margin-right: 5px;
     }
 }

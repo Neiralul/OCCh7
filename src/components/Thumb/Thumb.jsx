@@ -11,13 +11,15 @@ function Thumb() {
             backgroundSize: 'cover',
             height: '100%'
         }
-        return(<div className="square" key={data.id}>
-        <Link to={"/locations/"+data.id} className="locationLinks" >
-        <div className="background" style={bgImage}>
-            <div className="thumbText">{data.title}</div>
+        return(
+        <div className="square" key={data.id}>
+            <Link to={"/locations/"+data.id} className="locationLinks" >
+            <div className="background" style={bgImage}>
+                <div className="thumbText">{data.title}</div>
+            </div>
+            </Link>
         </div>
-        </Link>
-    </div>)
+        )
     })
 )}
 

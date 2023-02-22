@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useNavigate } from "react-router-dom";
 import Collapsible from '../../components/Collapsible/Collapsible'
 import Carousel from '../../components/Carrousel/Carrousel'
 import redStar from '../../images/redStar.svg'
@@ -10,11 +11,30 @@ import '../../styles/location.css'
 function Location() {
     const currentId = useParams('id').id;
     const currentLocation = Data.filter(data => data.id === currentId);
+    const navigate = useNavigate()
+    useEffect(() =>{
+        if(currentLocation.length === 0) {
+            return(
+                navigate("/page-introuvable")
+            )
+        }
+    })
+    if (currentLocation.length !==0) {
+    return (
+        Appartement()
+    )
+    }
+}
+
+export function Appartement() {
+    const currentId = useParams('id').id;
+    const currentLocation = Data.filter(data => data.id === currentId);
     const [Slides, setSlides] = useState([]);
     useEffect(() => {
         const currentLocation = Data.filter(data => data.id === currentId);
         setSlides(currentLocation[0].pictures);
-    })
+    }, [currentId])
+
     return(
     <div className="LocationPage">
         <Carousel Slides={Slides}/>
@@ -25,7 +45,7 @@ function Location() {
             </div>
             <div className="LocationOwner Part">
                 <span className="OwnerName">{currentLocation[0].host.name}</span>
-                <img src={currentLocation[0].host.picture} className="OwnerPicture"/>
+                <img src={currentLocation[0].host.picture} className="OwnerPicture" alt={currentLocation[0].host.name}/>
             </div>
             <div className="LocationTags Part">
                 {currentLocation[0].tags.map((tag, index) => {
@@ -57,6 +77,6 @@ function Location() {
             </div>
         </div>
     </div>
-    )}
-
+    )
+                }
 export default Location;

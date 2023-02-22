@@ -21,6 +21,10 @@ min-width: fit-content;
     line-height: 142.6%;
     margin-right: 20px;
     color: #FF6060;
+    text-decoration: none;
+}
+.kasanav-home:hover {
+    text-decoration: underline;
 }
 
 .kasanav-about {
@@ -31,8 +35,11 @@ min-width: fit-content;
     line-height: 142.6%;
     margin-left: 20px;
     color: #FF6060;
+    text-decoration: none;
 }
-
+.kasanav-about:hover {
+    text-decoration: underline;
+}
 .topLogo {
     margin-top: 20px;
     margin-left: 5%;
